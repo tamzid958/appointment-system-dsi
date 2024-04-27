@@ -37,6 +37,6 @@ out
 ### logging ###
 logs
 
-### environment
-docker-compose.yaml
+### environment ###
 .env
+docker-compose.yaml
