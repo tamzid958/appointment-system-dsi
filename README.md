@@ -2,9 +2,7 @@
 
 ## Description
 
-Appointment system is a Java Spring boot application designed to facilitate doctor appointment. It leverages
-various technologies including Spring Framework, Hibernate, PostgreSQL, and Liquibase to provide a robust and
-flexible platform for meeting management.
+The Appointment System is a robust and user-friendly Java Spring Boot application designed to streamline doctor appointment scheduling for patients and medical professionals. This cutting-edge application aims to revolutionize the way appointments are managed, making it more efficient, accessible, and convenient for all users. It leverages various technologies including Spring Framework, Hibernate, PostgreSQL, and Liquibase to provide a robust and flexible platform for doctor appointment.
 
 ## Technologies Used
 - Java
