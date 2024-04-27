@@ -1,4 +1,4 @@
-# DOCKER-BASED SETUP
+# DOCKER-BASED INSTALLATION
 
 ## Docker Installation For Ubuntu Based System
 
@@ -123,7 +123,7 @@ docker compose logs -f app
 Firstly navigate to your project directory and run the below command:
 
 ```
-cp  .env.docker .env
+cp .env.docker .env
 ```
 
 Update .env file with proper credentials & information using vim:
