@@ -1,6 +1,6 @@
 # Stage 1: Build the application
 FROM maven:3.8.4-openjdk-17 AS appointment_system_builder
-WORKDIR /app
+WORKDIR /app/backend
 
 COPY .mvn .mvn
 COPY mvnw mvnw.cmd pom.xml ./
