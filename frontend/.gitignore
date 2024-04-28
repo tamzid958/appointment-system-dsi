@@ -1,0 +1,51 @@
+### misc ###
+.DS_Store
+*.pem
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### docker compose files ###
+docker-compose.yaml
+### logging ###
+logs
+### env files ###
+.env
+### Frontend Start ###
+node_modules
+.pnp
+.pnp.js
+.yarn/install-state.gz
+### testing ###
+coverage
+### next.js ###
+.next/
+out/
+### production ###
+build
+### debug ###
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+### vercel ###
+.vercel
+### typescript ###
+*.tsbuildinfo
+next-env.d.ts
+

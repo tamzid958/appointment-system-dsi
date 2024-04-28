@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  dsi_spring:
+    depends_on:
+      - dsi_postgres
+    image: appointment-system-backend:v1
+    build:
+      context: ./
+      dockerfile: .docker/spring/Dockerfile
+    container_name: springboot_app
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.datasource.url=jdbc:postgresql://dsi_postgres:5432/$DB_POSTGRES
+      - spring.datasource.username=$DB_POSTGRES_USER
+      - spring.datasource.password=$DB_POSTGRES_PASSWORD
+    volumes:
+      - .:/app/backend
+
+  dsi_postgres:
+    image: postgres:16-alpine
+    container_name: postgres_database
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: appointment-system-dsi
+      POSTGRES_USER: dsi
+      POSTGRES_PASSWORD: dsi
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
