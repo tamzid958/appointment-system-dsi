@@ -3,7 +3,7 @@
 Clone the repository (no needed if already cloned):
 
 ```
-git@github.com:tamzid958/appointment-system-dsi.git
+git clone git@github.com:tamzid958/appointment-system-dsi.git
 cd appointment-system-dsi/frontend
 git checkout main
 ```
